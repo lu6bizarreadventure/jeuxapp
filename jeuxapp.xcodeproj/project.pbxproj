@@ -11,6 +11,10 @@
 		8FAB95EF2B5A794F0022AC5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAB95EE2B5A794F0022AC5E /* ContentView.swift */; };
 		8FAB95F12B5A79500022AC5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FAB95F02B5A79500022AC5E /* Assets.xcassets */; };
 		8FAB95F42B5A79500022AC5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FAB95F32B5A79500022AC5E /* Preview Assets.xcassets */; };
+		8FAB95FD2B5A7F060022AC5E /* answer.md in Resources */ = {isa = PBXBuildFile; fileRef = 8FAB95FC2B5A7F060022AC5E /* answer.md */; };
+		8FAB95FF2B5A824F0022AC5E /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAB95FE2B5A824F0022AC5E /* AddItemView.swift */; };
+		8FAB96012B5AB0220022AC5E /* LootItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAB96002B5AB0220022AC5E /* LootItem.swift */; };
+		8FAB96032B5AB73C0022AC5E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAB96022B5AB73C0022AC5E /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		8FAB95EE2B5A794F0022AC5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8FAB95F02B5A79500022AC5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FAB95F32B5A79500022AC5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8FAB95FC2B5A7F060022AC5E /* answer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = answer.md; sourceTree = "<group>"; };
+		8FAB95FE2B5A824F0022AC5E /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		8FAB96002B5AB0220022AC5E /* LootItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootItem.swift; sourceTree = "<group>"; };
+		8FAB96022B5AB73C0022AC5E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,10 @@
 				8FAB95EE2B5A794F0022AC5E /* ContentView.swift */,
 				8FAB95F02B5A79500022AC5E /* Assets.xcassets */,
 				8FAB95F22B5A79500022AC5E /* Preview Content */,
+				8FAB95FC2B5A7F060022AC5E /* answer.md */,
+				8FAB95FE2B5A824F0022AC5E /* AddItemView.swift */,
+				8FAB96002B5AB0220022AC5E /* LootItem.swift */,
+				8FAB96022B5AB73C0022AC5E /* Game.swift */,
 			);
 			path = jeuxapp;
 			sourceTree = "<group>";
@@ -127,6 +139,7 @@
 			files = (
 				8FAB95F42B5A79500022AC5E /* Preview Assets.xcassets in Resources */,
 				8FAB95F12B5A79500022AC5E /* Assets.xcassets in Resources */,
+				8FAB95FD2B5A7F060022AC5E /* answer.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FAB95EF2B5A794F0022AC5E /* ContentView.swift in Sources */,
+				8FAB96032B5AB73C0022AC5E /* Game.swift in Sources */,
+				8FAB95FF2B5A824F0022AC5E /* AddItemView.swift in Sources */,
+				8FAB96012B5AB0220022AC5E /* LootItem.swift in Sources */,
 				8FAB95ED2B5A794F0022AC5E /* jeuxappApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
