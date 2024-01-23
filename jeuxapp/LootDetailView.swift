@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LootDetailView: View {
     @State var item: LootItem
+    @State var isAnimated = false
     
     var body: some View {
         VStack {
@@ -17,19 +18,31 @@ struct LootDetailView: View {
                     .frame(width: 150, height: 150)
                     .foregroundColor(item.rarity.color)
                     .cornerRadius(20.0)
-                    .shadow(color: Color(item.rarity.color), radius: 20)
                 
                 Text(item.type.rawValue).font(.system(size: 60))
             }
+            .rotation3DEffect(
+                .degrees(isAnimated ? 360 : 0),
+                axis: (x: 1.0, y: 0.5, z: 0.0)
+            )
+            .animation(.bouncy.delay(0.4), value: isAnimated)
+            .shadow(color: Color(item.rarity.color), radius: isAnimated ? 100 : 0)
+            .animation(.bouncy.delay(0.6), value: isAnimated)
+            .task {
+                isAnimated = true
+            }
+            
             Text(item.name).font(.system(size: 30)).bold().foregroundStyle(item.rarity.color)
             if (item.rarity == Rarity.unique) {
                 ZStack {
-                    Rectangle()
-                        .frame(width: 300, height: 40)
-                        .foregroundColor(item.rarity.color)
-                        .cornerRadius(10.0)
-                    Text("Item unique 🏆").foregroundStyle(.white).bold()
-                }
+                    if (isAnimated) {
+                        Rectangle()
+                            .frame(width: 300, height: 40)
+                            .foregroundColor(item.rarity.color)
+                            .cornerRadius(10.0)
+                        Text("Item unique 🏆").foregroundStyle(.white).bold()
+                    }
+                }.animation(.bouncy.delay(0.4), value: isAnimated)
             }
             
             NavigationStack {
