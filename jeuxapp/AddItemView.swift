@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum Rarity: CaseIterable {
+enum Rarity: String, CaseIterable {
     case common
     case uncommon
     case rare
@@ -90,7 +90,7 @@ struct AddItemView: View {
             }
             
             Button(action: {
-                let newItem = LootItem(quantity: quantity, name: name, type: type, rarity: rarity, game: game)
+                let newItem = LootItem(quantity: quantity, name: name, type: type, rarity: rarity, attackStrength: attackStrength, game: game)
                 inventory.addItem(item: newItem)
                 presentationMode.wrappedValue.dismiss()
             }, label: {

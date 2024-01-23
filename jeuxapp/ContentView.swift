@@ -31,21 +31,22 @@ struct ContentView: View {
         NavigationStack {
             List {
                 ForEach(inventory.loot, id: \.id) { item in
-                    HStack {
-                        Circle().frame(width: 10, height: 10).foregroundColor(item.rarity.color)
-                        VStack {
-                            HStack {
-                                Text(item.name)
-                                Text(item.type.rawValue)
+                    NavigationLink {
+                        LootDetailView(item: item)
+                    } label: {
+                        HStack {
+                            Circle().frame(width: 10, height: 10).foregroundColor(item.rarity.color)
+                            VStack {
+                                HStack {
+                                    Text(item.name)
+                                    Text(item.type.rawValue)
+                                }
+                                
+                                Text("Quantity : \(item.quantity)")
+                                
                             }
-                            
-                            Text("Quantity : \(item.quantity)")
-                            
                         }
                     }
-                    
-                    
-                    
                 }
             }.sheet(isPresented: $showAddItemView, content: {
                 AddItemView()

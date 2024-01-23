@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F766F3D2B5FB160005F4BC5 /* LootDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F766F3C2B5FB160005F4BC5 /* LootDetailView.swift */; };
 		8FAB95ED2B5A794F0022AC5E /* jeuxappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAB95EC2B5A794F0022AC5E /* jeuxappApp.swift */; };
 		8FAB95EF2B5A794F0022AC5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAB95EE2B5A794F0022AC5E /* ContentView.swift */; };
 		8FAB95F12B5A79500022AC5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FAB95F02B5A79500022AC5E /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F766F3C2B5FB160005F4BC5 /* LootDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootDetailView.swift; sourceTree = "<group>"; };
 		8FAB95E92B5A794F0022AC5E /* jeuxapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jeuxapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FAB95EC2B5A794F0022AC5E /* jeuxappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jeuxappApp.swift; sourceTree = "<group>"; };
 		8FAB95EE2B5A794F0022AC5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				8FAB95FE2B5A824F0022AC5E /* AddItemView.swift */,
 				8FAB96002B5AB0220022AC5E /* LootItem.swift */,
 				8FAB96022B5AB73C0022AC5E /* Game.swift */,
+				8F766F3C2B5FB160005F4BC5 /* LootDetailView.swift */,
 			);
 			path = jeuxapp;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				8FAB95EF2B5A794F0022AC5E /* ContentView.swift in Sources */,
 				8FAB96032B5AB73C0022AC5E /* Game.swift in Sources */,
 				8FAB95FF2B5A824F0022AC5E /* AddItemView.swift in Sources */,
+				8F766F3D2B5FB160005F4BC5 /* LootDetailView.swift in Sources */,
 				8FAB96012B5AB0220022AC5E /* LootItem.swift in Sources */,
 				8FAB95ED2B5A794F0022AC5E /* jeuxappApp.swift in Sources */,
 			);
