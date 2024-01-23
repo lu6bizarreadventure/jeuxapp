@@ -42,7 +42,7 @@ struct LootDetailView: View {
                             .cornerRadius(10.0)
                         Text("Item unique 🏆").foregroundStyle(.white).bold()
                     }
-                }.animation(.bouncy.delay(0.4), value: isAnimated)
+                }.animation(.spring.delay(0.4), value: isAnimated)
             }
             
             NavigationStack {
