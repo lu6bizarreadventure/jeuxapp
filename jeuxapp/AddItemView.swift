@@ -36,6 +36,11 @@ enum Rarity: CaseIterable {
 struct AddItemView: View {
     @State var name: String = ""
     @State var rarity: Rarity = Rarity.common
+    @State var game: Game = Game.emptyGame
+    @State var quantity: Int = 1
+    @State var type: ItemType = ItemType.magic
+    @State var attackItem: Bool = false
+    @State var attackStrength: Int = 0
     
     @EnvironmentObject var inventory: Inventory
     @Environment(\.presentationMode) var presentationMode
@@ -49,14 +54,48 @@ struct AddItemView: View {
                         Text(String(describing: rarity).capitalized)
                     }
                 }
-                Button(action: {
-                    let newItem = LootItem(quantity: 1, name: name, type: ItemType.bow, rarity: Rarity.common, game: availableGames[0])
-                    inventory.addItem(item: newItem)
-                    presentationMode.wrappedValue.dismiss()
-                }, label: {
-                    Text("Ajouter")
-                })
             }
+            
+            Section {
+                Picker("Jeu", selection: $game) {
+                    ForEach(availableGames, id: \.self) { game in
+                        Text(String(describing: game.name).capitalized)
+                    }
+                }
+                Stepper("Combien : \(quantity)", onIncrement: { quantity += 1 }, onDecrement: { quantity -= 1})
+            }
+            
+            Section {
+                HStack {
+                    Text("Type")
+                    Spacer()
+                    Text(type.rawValue)
+                }
+                Picker("Type", selection: $type) {
+                    ForEach(ItemType.allCases, id: \.self) { type in
+                        Text(String(describing: type.rawValue).capitalized)
+                    }
+                }
+                .pickerStyle(.palette)
+            }
+            
+            Section {
+                VStack {
+                    Toggle("Item d'attaque", isOn: $attackItem)
+                    
+                    if attackItem {
+                        Stepper("Force d'attaque: \(attackStrength)", onIncrement: { attackStrength += 1 }, onDecrement: { attackStrength -= 1 })
+                    }
+                }
+            }
+            
+            Button(action: {
+                let newItem = LootItem(quantity: quantity, name: name, type: type, rarity: rarity, game: game)
+                inventory.addItem(item: newItem)
+                presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Text("Ajouter")
+            })
         }
     }
 }

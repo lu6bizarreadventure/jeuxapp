@@ -23,7 +23,7 @@ struct Game: Identifiable, Hashable {
 // Hesitez pas mettre vos propres jeux dans la liste
 let availableGames = [
     Game(name: "Elden Ring", genre: .rpg, coverName: "Assets/co4jni.png"),
-    Game(name: "The Witcher III", genre: .rpg, coverName: "Assets/co1wyy.png"),
+    Game(name: "The Witcher III: Wild Hunt", genre: .rpg, coverName: "Assets/co1wyy.png"),
     Game(name: "Super Smash Bros: brawl", genre: .mmorpg, coverName: "Assets/co221w.png"),
     Game(name: "the legend of Zelda: Majora's Mask", genre: .fps, coverName: "Assets/co1ujb.png"),
     Game(name: "Uncharted 4", genre: .looter, coverName: "Assets/co1r7h.png"),

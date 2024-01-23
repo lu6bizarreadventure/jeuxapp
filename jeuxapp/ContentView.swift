@@ -32,9 +32,19 @@ struct ContentView: View {
             List {
                 ForEach(inventory.loot, id: \.id) { item in
                     HStack {
-                        Text(item.name)
-                        Text(item.type.rawValue)
+                        Circle().frame(width: 10, height: 10).foregroundColor(item.rarity.color)
+                        VStack {
+                            HStack {
+                                Text(item.name)
+                                Text(item.type.rawValue)
+                            }
+                            
+                            Text("Quantity : \(item.quantity)")
+                            
+                        }
                     }
+                    
+                    
                     
                 }
             }.sheet(isPresented: $showAddItemView, content: {
