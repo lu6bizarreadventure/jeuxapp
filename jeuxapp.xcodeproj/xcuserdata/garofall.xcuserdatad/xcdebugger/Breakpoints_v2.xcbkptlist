@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D19825EE-69E6-44F4-BB42-16B7DA45BE46"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4394C44B-8695-4F1E-8E79-EB429D29DF5B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jeuxapp/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ContentView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "4394C44B-8695-4F1E-8E79-EB429D29DF5B - 6ef53b42fa9d7b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jeuxapp.ContentView.init() -&gt; jeuxapp.ContentView"
+                  moduleName = "jeuxapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/garofall/Documents/jeuxapp/jeuxapp/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "55">
+               </Location>
+               <Location
+                  uuid = "4394C44B-8695-4F1E-8E79-EB429D29DF5B - 7fecf3a8057ac381"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jeuxapp.ContentView.init(selectedFeature: jeuxapp.LooterFeature) -&gt; jeuxapp.ContentView"
+                  moduleName = "jeuxapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/garofall/Documents/jeuxapp/jeuxapp/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "7">
+               </Location>
+               <Location
+                  uuid = "4394C44B-8695-4F1E-8E79-EB429D29DF5B - 6ef53b42fa9c85d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jeuxapp.ContentView.init() -&gt; jeuxapp.ContentView"
+                  moduleName = "jeuxapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/garofall/Documents/jeuxapp/jeuxapp/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  uuid = "4394C44B-8695-4F1E-8E79-EB429D29DF5B - 7fecf3a8057ade5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jeuxapp.ContentView.init(selectedFeature: jeuxapp.LooterFeature) -&gt; jeuxapp.ContentView"
+                  moduleName = "jeuxapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/garofall/Documents/jeuxapp/jeuxapp/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "18">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

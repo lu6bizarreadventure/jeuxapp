@@ -15,8 +15,9 @@ struct OnboardingView: View {
         TabView(selection: $step) {
             OnboardingPageView(title: "Gérer des loots", description: "Chipi chipi chapa chapa", image: "gym.bag.fill", color: .blue, step: $step).tag(1)
             OnboardingPageView(title: "Votre whishlist", description: "Dubi dubi daba daba", image: "wand.and.stars", color: .purple, step: $step).tag(2)
-            OnboardingPageView(title: "En un coup d'oeil", description: "Magico mi dubi dubi boom boom boom", image: "iphone.case", color: .orange, step: $step).tag(3)
+            OnboardingPageView(title: "En un coup d'oeil", description: "Magico mi dubi dubi boom boom boom", image: "eyes", color: .orange, step: $step).tag(3)
         }.tabViewStyle(PageTabViewStyle())
+            .indexViewStyle(.page(backgroundDisplayMode: .always))
     }
 }
 

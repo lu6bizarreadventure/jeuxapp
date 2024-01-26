@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct LootDetailView: View {
+    @Environment(\.editMode) private var editMode
     @State var item: LootItem
     @State var isAnimated = false
+    
+    @State var showEditItemView: Bool = false
     
     var body: some View {
         VStack {
@@ -46,48 +49,62 @@ struct LootDetailView: View {
             }
             
             NavigationStack {
-                List {
-                    Section {
-                        HStack {
-                            if (item.game.coverName != nil) {
-                                Image(item.game.coverName!)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 58)
-                                    .cornerRadius(3.0)
-                            } else {
-                                ZStack{
-                                    Rectangle().frame(width: 40, height: 58)
-                                        .foregroundColor(.gray)
-                                        .opacity(0.4)
-                                    Image(systemName: "rectangle.slash")
-                                        .foregroundColor(.black)
-                                        .opacity(0.4)
+                ZStack {
+                    Color(item.rarity.color).ignoresSafeArea()
+                    List {
+                        Section {
+                            HStack {
+                                if (item.game.coverName != nil) {
+                                    Image(item.game.coverName!)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 58)
+                                        .cornerRadius(3.0)
+                                } else {
+                                    ZStack{
+                                        Rectangle().frame(width: 40, height: 58)
+                                            .foregroundColor(.gray)
+                                            .opacity(0.4)
+                                        Image(systemName: "rectangle.slash")
+                                            .foregroundColor(.black)
+                                            .opacity(0.4)
+                                    }
                                 }
+                                
+                                Text(item.game.name).bold()
                             }
+                            Text("In-Game : \(item.name)")
+                            if (item.attackStrength != nil){
+                                Text("Puissance(ATQ) : \(item.attackStrength!)")
+                            }
+                            Text("Possédé(s) : \(item.quantity)")
+                            Text("Rareté : \(item.rarity.rawValue)")
                             
-                            Text(item.game.name).bold()
+                            
+                        } header: {
+                            Text("Information")
                         }
-                        Text("In-Game : \(item.name)")
-                        if (item.attackStrength != nil){
-                            Text("Puissance(ATQ) : \(item.attackStrength!)")
-                        }
-                        Text("Possédé(s) : \(item.quantity)")
-                        Text("Rareté : \(item.rarity.rawValue)")
-                        
-                        
-                    } header: {
-                        Text("Information")
-                    }
+                    }.scrollContentBackground(.hidden)
                 }
+                
             }
-        }
-        
-        
-        
+        }.sheet(isPresented: $showEditItemView, content: {
+            EditItemView(item: item)
+        })
+        .navigationBarTitle("Item")
+        .toolbar(content: {
+            ToolbarItem(placement: ToolbarItemPlacement.automatic) {
+                Button(action: {
+                    showEditItemView.toggle()
+                }, label: {
+                    Text("Edit")
+                    Image(systemName: "pencil")
+                })
+            }
+        })
     }
 }
 
 #Preview {
-    LootDetailView(item: LootItem(quantity: 1, name: "Boule Smash", type: ItemType.magic, rarity: Rarity.unique, attackStrength: 1, game: availableGames[2]))
+    LootDetailView(item: LootItem(quantity: 1, name: "Boule Smash", type: ItemType.magic, rarity: Rarity.rare, attackStrength: 1, game: availableGames[2]))
 }

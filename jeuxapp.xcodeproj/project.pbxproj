@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		8F27D6372B63972700E49BDC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D6362B63972700E49BDC /* OnboardingView.swift */; };
 		8F27D6392B6398B000E49BDC /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D6382B6398B000E49BDC /* OnboardingPageView.swift */; };
+		8F27D6572B63E19500E49BDC /* LootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D6562B63E19500E49BDC /* LootView.swift */; };
+		8F27D6592B63E21500E49BDC /* WishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D6582B63E21500E49BDC /* WishListView.swift */; };
+		8F27D65B2B63E22600E49BDC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D65A2B63E22600E49BDC /* ProfileView.swift */; };
+		8F27D65D2B63E8A900E49BDC /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D65C2B63E8A900E49BDC /* EditItemView.swift */; };
 		8F766F3D2B5FB160005F4BC5 /* LootDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F766F3C2B5FB160005F4BC5 /* LootDetailView.swift */; };
 		8FAB95ED2B5A794F0022AC5E /* jeuxappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAB95EC2B5A794F0022AC5E /* jeuxappApp.swift */; };
 		8FAB95EF2B5A794F0022AC5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAB95EE2B5A794F0022AC5E /* ContentView.swift */; };
@@ -23,6 +27,10 @@
 /* Begin PBXFileReference section */
 		8F27D6362B63972700E49BDC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		8F27D6382B6398B000E49BDC /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		8F27D6562B63E19500E49BDC /* LootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootView.swift; sourceTree = "<group>"; };
+		8F27D6582B63E21500E49BDC /* WishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListView.swift; sourceTree = "<group>"; };
+		8F27D65A2B63E22600E49BDC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		8F27D65C2B63E8A900E49BDC /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		8F766F3C2B5FB160005F4BC5 /* LootDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootDetailView.swift; sourceTree = "<group>"; };
 		8FAB95E92B5A794F0022AC5E /* jeuxapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jeuxapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FAB95EC2B5A794F0022AC5E /* jeuxappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jeuxappApp.swift; sourceTree = "<group>"; };
@@ -76,6 +84,10 @@
 				8F766F3C2B5FB160005F4BC5 /* LootDetailView.swift */,
 				8F27D6362B63972700E49BDC /* OnboardingView.swift */,
 				8F27D6382B6398B000E49BDC /* OnboardingPageView.swift */,
+				8F27D6562B63E19500E49BDC /* LootView.swift */,
+				8F27D6582B63E21500E49BDC /* WishListView.swift */,
+				8F27D65A2B63E22600E49BDC /* ProfileView.swift */,
+				8F27D65C2B63E8A900E49BDC /* EditItemView.swift */,
 			);
 			path = jeuxapp;
 			sourceTree = "<group>";
@@ -162,10 +174,14 @@
 				8FAB95EF2B5A794F0022AC5E /* ContentView.swift in Sources */,
 				8FAB96032B5AB73C0022AC5E /* Game.swift in Sources */,
 				8F27D6372B63972700E49BDC /* OnboardingView.swift in Sources */,
+				8F27D6572B63E19500E49BDC /* LootView.swift in Sources */,
 				8FAB95FF2B5A824F0022AC5E /* AddItemView.swift in Sources */,
+				8F27D65D2B63E8A900E49BDC /* EditItemView.swift in Sources */,
+				8F27D6592B63E21500E49BDC /* WishListView.swift in Sources */,
 				8F766F3D2B5FB160005F4BC5 /* LootDetailView.swift in Sources */,
 				8FAB96012B5AB0220022AC5E /* LootItem.swift in Sources */,
 				8F27D6392B6398B000E49BDC /* OnboardingPageView.swift in Sources */,
+				8F27D65B2B63E22600E49BDC /* ProfileView.swift in Sources */,
 				8FAB95ED2B5A794F0022AC5E /* jeuxappApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
