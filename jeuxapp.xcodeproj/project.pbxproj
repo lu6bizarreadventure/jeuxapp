@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F27D6372B63972700E49BDC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D6362B63972700E49BDC /* OnboardingView.swift */; };
+		8F27D6392B6398B000E49BDC /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F27D6382B6398B000E49BDC /* OnboardingPageView.swift */; };
 		8F766F3D2B5FB160005F4BC5 /* LootDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F766F3C2B5FB160005F4BC5 /* LootDetailView.swift */; };
 		8FAB95ED2B5A794F0022AC5E /* jeuxappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAB95EC2B5A794F0022AC5E /* jeuxappApp.swift */; };
 		8FAB95EF2B5A794F0022AC5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAB95EE2B5A794F0022AC5E /* ContentView.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F27D6362B63972700E49BDC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8F27D6382B6398B000E49BDC /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		8F766F3C2B5FB160005F4BC5 /* LootDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootDetailView.swift; sourceTree = "<group>"; };
 		8FAB95E92B5A794F0022AC5E /* jeuxapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jeuxapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FAB95EC2B5A794F0022AC5E /* jeuxappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jeuxappApp.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				8FAB96002B5AB0220022AC5E /* LootItem.swift */,
 				8FAB96022B5AB73C0022AC5E /* Game.swift */,
 				8F766F3C2B5FB160005F4BC5 /* LootDetailView.swift */,
+				8F27D6362B63972700E49BDC /* OnboardingView.swift */,
+				8F27D6382B6398B000E49BDC /* OnboardingPageView.swift */,
 			);
 			path = jeuxapp;
 			sourceTree = "<group>";
@@ -155,9 +161,11 @@
 			files = (
 				8FAB95EF2B5A794F0022AC5E /* ContentView.swift in Sources */,
 				8FAB96032B5AB73C0022AC5E /* Game.swift in Sources */,
+				8F27D6372B63972700E49BDC /* OnboardingView.swift in Sources */,
 				8FAB95FF2B5A824F0022AC5E /* AddItemView.swift in Sources */,
 				8F766F3D2B5FB160005F4BC5 /* LootDetailView.swift in Sources */,
 				8FAB96012B5AB0220022AC5E /* LootItem.swift in Sources */,
+				8F27D6392B6398B000E49BDC /* OnboardingPageView.swift in Sources */,
 				8FAB95ED2B5A794F0022AC5E /* jeuxappApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
